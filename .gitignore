@@ -3,3 +3,4 @@ sample-output
 __pycache__
 .venv
 .envrc
+dist
