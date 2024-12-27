@@ -1,0 +1,5 @@
+.idea
+sample-output
+__pycache__
+.venv
+.envrc

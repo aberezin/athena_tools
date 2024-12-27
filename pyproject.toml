@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "athena-tools"
+version = "0.1.0"
+description = "Simple cli to exec a query"
+authors = ["Alan Berezin <alan.berezin1.gmail.com>"]
+readme = "README.md"
+
+# packages = [ { include = "aws_cost_explorer" } ]
+
+#include = ["tests/*", "README.md"]
+include = ["README.md"]
+
+[tool.poetry.dependencies]
+python = "^3.09"
+boto3 = "^1.34.111"
+
+[tool.poetry.scripts]
+athena_query_executor = 'athena_tools.athena_query_executor:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
